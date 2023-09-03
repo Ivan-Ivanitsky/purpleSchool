@@ -1,0 +1,281 @@
+/* Button*/
+.button {
+    font-size: var(--btn--fz);
+    border-radius: var(--btn--border-10);
+    border: solid 1px #4d5064;
+    padding: 16px 32px;
+    background: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+
+.button_primary {
+    background:
+        #6c38cc;
+    border: none;
+}
+
+.button_gray {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background: #1e1f29;
+    cursor: pointer;
+    pointer-events: none;
+    transition: left 0.5s;
+}
+
+.button_active{
+    left: -100%;
+}   
+
+.button_gray::before {
+    content: url('../images/play.svg');
+    height: 20px;
+}
+
+/*btn hover*/
+.button_ghost:hover {
+    background:
+        #4d5064;
+    color: #FAFAFA;
+}
+
+.button_primary:hover {
+    background:
+        #452481;
+}
+
+/*desc*/
+
+.desc {
+    color:
+        #e47ad5;
+    font-size: 16px;
+}
+
+
+/*h2*/
+
+.h2 {
+    font-size: 46px;
+    font-weight: 400;
+}
+
+/*info*/
+
+.info {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 32px;
+    max-width: 782px;
+}
+
+/*links-social*/
+
+.links-social {
+    display: flex;
+    gap: 24px;
+    cursor: pointer;
+    margin-bottom: 48px;
+}
+
+
+.links-social img {
+    border: solid 1px #7e7979;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.links-social img:hover {
+    border: solid 0.5px #fff;
+    border-radius: 8px;
+}
+
+
+
+/*titile*/
+
+.title {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+/*subtitle*/
+.subtitle {
+    margin-bottom: 8px;
+    color:
+        #e47ad5;
+}
+
+/*course card*/
+
+.card-wrapper {
+    border-radius: var(--card-course-border);
+    overflow: hidden;
+    background: #1E1F29
+}
+
+.card-bg img {
+    width: 100%;
+}
+
+.card-footer {
+    background: #2E2D3D;
+}
+
+
+
+.card-time::before {
+    content: url('../images/timecircle.svg');
+    height: 24px;
+}
+
+.card-rate::before {
+    content: url('../images/Star.svg');
+    height: 17px;
+}
+
+
+.card-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px 24px;
+}
+
+.card__title {
+    margin-bottom: 4px;
+}
+
+.card-author {
+    color: #AFB2BF
+}
+
+.card-time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-rate {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 6px 12px;
+}
+
+.card-info {
+    border-radius: 17px;
+    border: 1px solid #4D5064;
+}
+
+.card-name {
+    padding: 6px 12px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.card-price {
+    font-size: 22px;
+}
+
+.card__rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/*trust*/
+
+.trust-wrapper {
+    display: grid;
+    grid-template-columns: [start] 1fr 1fr  1fr [end] ;
+    gap:0 70px;
+    padding: 100px 24px !important;
+}
+
+.trust-wrapper__top {
+    grid-column: start / end;
+}
+.trust-title{
+    grid-column: start / end;
+}
+
+.card_light {
+    height: 188px;
+    border-radius: 10px;
+    background: var(--card-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.card_height{
+    height: 113px;
+}
+.card_flex{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 70px;
+}
+
+.card-num {
+    background: var(--Grad1, linear-gradient(93deg, #D77BE5 9.26%, #BE63E5 42.32%, #6C38CC 104.58%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 46px;
+    font-weight: 700;
+}
+.card-num_white{
+    font-size: 54px;
+
+font-weight: 400;
+}
+.card_stars{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+/*media trust*/
+
+@media (max-width:991px){
+    .trust-wrapper{
+        grid-template-columns: [start] repeat(2,1fr) [end] ;
+    }
+    .card_height{
+        margin-bottom: 70px
+    }
+}
+
+@media (max-width:640px) {
+    .trust-wrapper{
+        grid-template-columns: [start] 1fr [end] ;
+        gap: 16px;
+    }
+    .card_flex{
+        margin-bottom: 0;
+    }
+    .card_height{
+        margin-bottom: 16px
+    }
+    .trust-title{
+        margin-top: 16px;
+    }
+}

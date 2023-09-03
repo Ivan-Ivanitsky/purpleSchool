@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon"
+        href="https://zenclass-files-hot-01.storage.yandexcloud.net/1849844f-258a-4c23-a44f-e6a80e733a5d/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Montserrat:wght@600&family=Open+Sans:ital,wght@0,400;0,600;0,800;1,300&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <script src="./js/main.js" defer></script>
+    <title>Purpleschool</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-mobile">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="logo" />
+                </div>
+                <nav class="navigation ">
+                    <ul class="nav-mobile__menu-links">
+                        <li class="menu-links__link">
+                            <a name="course" href="#">Курсы</a>
+                        </li>
+                        <li class="menu-links__link"><a name="school" href="#">О школе</a></li>
+                        <li class="menu-links__link"><a name="blog" href="#">Блог</a></li>
+                        <li class="menu-links__link"><a href="#">База знаний</a></li>
+                        <li class="menu-links__link"> <a class="menu-login nav-mobile__menu-login" href="#">Вход</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="nav-mobile__btn_close"><img src="./images/closeIcon.svg" alt="кнопка закрыть"></button>
+        </div>
+        <div class="header">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="logo" />
+                </div>
+                <nav class="navigation ">
+                    <ul class="menu-links">
+                        <li class="menu-links__link">
+                            <a name="course" href="#">Курсы</a>
+                        </li>
+                        <li class="menu-links__link"><a name="school" href="#">О школе</a></li>
+                        <li class="menu-links__link"><a name="blog" href="#">Блог</a></li>
+                        <li class="menu-links__link"><a href="#">База знаний</a></li>
+                    </ul>
+                </nav>
+                <a class="menu-login" href="#">Вход</a>
+                <button class="menu__btn "><span></span></button>
+            </div>
+        </div>
+    </header>
+    <section class="section section_light ">
+        <div class="container section__container">
+            <div class="hero">
+                <h1 class="hero__left">
+                    <span>Доступные курсы по</span>
+                    <span class="hero_color"> Разработке и DevOps </span>
+                </h1>
+                <div class="hero__chose">
+                    <button class="button button_primary">Выбрать курс</button>
+                    <button class="button button_ghost">О школе</button>
+                </div>
+            </div>
+            <div class="hero__video">
+                <div class="hero__rectangle"></div>
+                <!-- <img src="./src/images/video.png" alt="video" /> -->
+                <div id="video1"></div>
+                <span>
+                    <iframe id="__kinescope_player_1"
+                        allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer"
+                        allowfullscreen="" width="100%" height="100%" style="border-width: 0px;"
+                        src="https://kinescope.io/embed/6a007567-deb9-4dfc-9eb3-e1edd3b5efc9?v=2.109.0&amp;enableIframeApi&amp;playerId=__kinescope_player_1&amp;size%5Bwidth%5D=100%25&amp;size%5Bheight%5D=100%25&amp;behaviour%5BautoPause%5D=true&amp;behaviour%5BplaysInline%5D=true&amp;ui%5BmainPlayButton%5D=false"></iframe>
+                </span>
+                <button class="button button_gray">О школе</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="course" class="section course">
+        <div class="container">
+            <div class="subtitle">
+                Выбрать курс
+            </div>
+            <h2 class="title">
+                Каталог курсов
+            </h2>
+
+            <div class="catalog__wrapper">
+                <div class="catalog__button catalog__button_active">Все</div>
+                <div class="catalog__button"> Frontend</div>
+                <div class="catalog__button"> Backend</div>
+                <div class="catalog__button"> DevOps</div>
+                <div class="catalog__button">Soft Skills</div>
+            </div>
+
+            <div class="course-cards__wrapper">
+                <div class="card-сourse">
+                    <div class="card-wrapper">
+                        <div class="card-bg">
+                            <img src="./images/card-img/html.jpg" alt="html картинка">
+                        </div>
+                        <div class="card-middle">
+                            <div class='card__header'>
+                                <h3 class="card__title">
+                                    HTML и CSS - полный курс по вёрстке с нуля
+                                </h3>
+                                <div class="card-author">Антон Ларичев</div>
+                            </div>
+                            <div class="card-time">20 часов лекций</div>
+                            <div class="card__rating-wrapper">
+                                <div class="card-info card-rate">4.9</div>
+                                <div class="card-info card-name">Frontend</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">от 1 890 ₽</div>
+                            <div class="button button_primary">Подробнее</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-сourse">
+                    <div class="card-wrapper">
+                        <div class="card-bg">
+                            <img src="./images/card-img/jsBasic.jpg" alt="jsBasic картинка">
+                        </div>
+                        <div class="card-middle">
+                            <div class='card__header'>
+                                <h3 class="card__title">
+                                    JavaScript с нуля - основы языка и практика для начинающих
+                                </h3>
+                                <div class="card-author">Антон Ларичев</div>
+                            </div>
+                            <div class="card-time">24 часов лекций</div>
+                            <div class="card__rating-wrapper">
+                                <div class="card-info card-rate">4.9</div>
+                                <div class="card-info card-name">Frontend</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">от 1 890 ₽</div>
+                            <div class="button button_primary">Подробнее</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-сourse">
+                    <div class="card-wrapper">
+                        <div class="card-bg">
+                            <img src="./images/card-img/JsAdvance.jpg" alt="JsAdvance картинка">
+                        </div>
+                        <div class="card-middle">
+                            <div class='card__header'>
+                                <h3 class="card__title">
+                                    JavaScript Advanced - продвинутые концепции языка и ООП
+                                </h3>
+                                <div class="card-author">Антон Ларичев</div>
+                            </div>
+                            <div class="card-time">22 часов лекций</div>
+                            <div class="card__rating-wrapper">
+                                <div class="card-info card-rate">4.9</div>
+                                <div class="card-info card-name">Frontend</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">от 1 890 ₽</div>
+                            <div class="button button_primary">Подробнее</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-сourse">
+                    <div class="card-wrapper">
+                        <div class="card-bg">
+                            <img src="./images/card-img/ts.jpg" alt="TypeScript картинка">
+                        </div>
+                        <div class="card-middle">
+                            <div class='card__header'>
+                                <h3 class="card__title">
+                                    TypeScript с нуля - полный курс и паттерны проектирования
+                                </h3>
+                                <div class="card-author">Антон Ларичев</div>
+                            </div>
+                            <div class="card-time">23 часов лекций</div>
+                            <div class="card__rating-wrapper">
+                                <div class="card-info card-rate">4.9</div>
+                                <div class="card-info card-name">Frontend</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">от 1 890 ₽</div>
+                            <div class="button button_primary">Подробнее</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-сourse">
+                    <div class="card-wrapper">
+                        <div class="card-bg">
+                            <img src="./images/card-img/react.jpg" alt="React картинка">
+                        </div>
+                        <div class="card-middle">
+                            <div class='card__header'>
+                                <h3 class="card__title">
+                                    React + Next.js - с нуля
+                                </h3>
+                                <div class="card-author">Антон Ларичев</div>
+                            </div>
+                            <div class="card-time">18 часов лекций</div>
+                            <div class="card__rating-wrapper">
+                                <div class="card-info card-rate">4.9</div>
+                                <div class="card-info card-name">Frontend</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">от 1 890 ₽</div>
+                            <div class="button button_primary">Подробнее</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="school" class="section section_light">
+        <div class="container trust-wrapper">
+            <div class="trust-wrapper__top">
+                <div class="subtitle">
+                    О школе
+                </div>
+                <h2 class="title">
+                    Нам доверяют
+                </h2>
+                <p class="info">
+                    Основатель школы и автор Антон Ларичев занимается разработкой уже более 13 лет и прошёл путь от
+                    разработчика до CTO. В курсах даются актуальные материалы без воды с опытом реальных проектов и
+                    практическим закреплением материала.
+                </p>
+            </div>
+            <div class="card_light card_flex">
+                <div class="card-num"> 15 000</div>
+                <div class="card-descrip">учеников по всему миру</div>
+            </div>
+            <div class="card_light card_flex">
+                <div class="card-num">30 дней</div>
+                <div class="card-descrip">гарантия возврата денег</div>
+            </div>
+            <div class="card_light card_flex">
+                <div class="card-num">90%</div>
+                <div class="card-descrip">студентов рекомендуют курсы</div>
+            </div>
+            <h2 class="title trust-title">Рейтинги на независимых платформах</h2>
+            <div class="card_light card_height ">
+                <div class="card-num_white"> 4.8</div>
+                <div class="card_stars">КурсесТоп
+                    <img src="./images/stars.svg" alt="рейтинг звезды">
+                </div>
+            </div>
+            <div class="card_light card_height ">
+                <div class="card-num_white"> 4.8</div>
+                <div class="card_stars">
+                    <img src="./images/udemy.svg" alt="курсы udemy">
+                    <img src="./images/stars.svg" alt="рейтинг звезды">
+                </div>
+            </div>
+            <div class="card_light card_height">
+                <div class="card-num_white"> 4.7</div>
+                <div class="card_stars">
+                    <img src="./images/stepik.svg" alt="курсы stepik">
+                    <img src="./images/stars.svg" alt="рейтинг звезды">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="section materialz">
+        <div class="container">
+            <div class="subtitle">
+                Блог и социальные сети
+            </div>
+            <h2 class="title">
+                Полезные материалы
+            </h2>
+            <p class="info">
+                Каждую неделю мы публикуем новости, обновления, а так же дополнительные полезные
+                материалы в социальных
+                сетях:
+            </p>
+            <div class="links-social ">
+                <a href=""><img src="./images/youtube.svg" alt="youtube" /></a>
+                <a href=""><img src="./images/telegram.svg" alt="telegram" /></a>
+                <a href=""><img src="./images/vk.svg" alt="vk" /></a>
+            </div>
+            <div class="cards">
+                <div class="cards__wrapper">
+                    <article class="card">
+                        <div class="card__content">
+                            <div class="card__stats">
+                                <div class="card__stat"><img src="./images/Calendar.svg" alt="календарь"> 06 мая
+                                    2023
+                                </div>
+                                <div class="card__stat"><img src="./images/Eye.svg" alt="просмотры"> 2 584
+                                    просмотра
+                                </div>
+                            </div>
+                            <h3 class="card__title">Критика в работе – ваш друг, но не всегда</h3>
+                            <div class="card__description">
+                                Когда делаешь код ревью иногда встречаешь с тем, что даешь конструктивную критику и она
+                                воспринимается в штыки, словно это личное оскорбление. Человек всеми силами пытается
+                                сопротивляться обратной связи и не готов слушать аргументы. Тут варианта два: или
+                                обратная
+                                связь дана некорректно, или человек не воспринимает критику. В этом посте я хочу
+                                сосредоточиться на том, как работать с критикой.
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            <a href="#" class="button button_ghost ">Читать</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__content">
+                            <div class="card__stats">
+                                <div class="card__stat"><img src="./images/Calendar.svg" alt="календарь"> 29 августа
+                                    2023
+                                </div>
+                                <div class="card__stat"><img src="./images/Eye.svg" alt="просмотры"> 30 просмотра
+                                </div>
+                            </div>
+                            <h3 class="card__title">Date: работа с датами в JavaScript</h3>
+                            <div class="card__description">
+                                В данной статье мы рассмотрим основные функции языка, такие как создание объектов даты,
+                                получение текущей даты и времени, форматирование значений и манипуляции с датами.
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            <a href="#" class="button button_ghost ">Читать</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__content">
+                            <div class="card__stats">
+                                <div class="card__stat"><img src="./images/Calendar.svg" alt="календарь"> 26 августа
+                                    2023
+                                </div>
+                                <div class="card__stat"><img src="./images/Eye.svg" alt="просмотры"> 15 просмотра
+                                </div>
+                            </div>
+                            <h3 class="card__title">JSON: методы, ограничения, примеры использования.</h3>
+                            <div class="card__description">
+                                Сейчас сложно представить веб разработку без JSON и в данной статье мы рассмотрим
+                                основные приемы работы с данным форматом, а так же примеры использования.
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            <a href="#" class="button button_ghost ">Читать</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section footer">
+        <div class="container">
+            <div class="footer__social">
+                <div class="footer__logo">
+                    <img src="./images/logo.svg" alt="logo" />
+                </div>
+                <div class="links-social footer__links-social">
+                    <a href=""><img src="./images/youtube.svg" alt="youtube" /></a>
+                    <a href=""><img src="./images/telegram.svg" alt="telegram" /></a>
+                    <a href=""><img src="./images/vk.svg" alt="vk" /></a>
+                </div>
+            </div>
+            <div class="footer__wrapper">
+                <nav class="footer__menu">
+                    <div class="subtitle footer__menu_subtitle">Меню</div>
+                    <ul class="menu-small">
+                        <li><a name="course" href="#">Курсы</a> </li>
+                        <li><a name="school" href="#">О школе</a> </li>
+                        <li><a name="blog" href="#">Блог</a> </li>
+                        <li><a href="#">База знаний</a> </li>
+                    </ul>
+                </nav>
+                <div class="footer__menu">
+                    <div class="subtitle footer__menu_subtitle">Документы</div>
+                    <ul class="menu-small">
+                        <li><a href="#">Договор Оферта</a> </li>
+                        <li><a href="#">Политика конфиденциальности</a> </li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <div class="subtitle footer__menu_subtitle">Реквизиты</div>
+                    <ul class="menu-small">
+                        <li><a href="">ИП Ларичев Антон Андреевич</a></li>
+                        <li><a href="">ИНН 773373765379</a> </li>
+                        <li><a href="">contact@purpleschool.ru</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right">
+                PurpleSchool © 2020 - 2023 Все права защищены
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

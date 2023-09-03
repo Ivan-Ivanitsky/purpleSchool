@@ -1,0 +1,57 @@
+:root{
+    --bg--top : 
+    rgba(30, 31, 41, 1);
+    --bg--medium:
+    rgba(22, 23, 29, 1);
+    --bg--footer:rgba(16, 17, 20, 1);
+    --card-light:#2E2D3D;
+    --color--link: #FAFAFA;
+    --color--link_hover:
+    rgba(175, 178, 191, 1);
+
+    --border-8:8px;
+    --card-course-border:10px;
+    --btn--fz:18px;
+    --btn--border-10:10px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    color: var(--color--link);
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: calc(1220px - 48px);
+    padding: 40px 24px;
+}
+
+.section{
+    background: var(--bg--medium);
+}
+
+ul{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover{
+    color: var(--color--link_hover);
+}
+
+
+
+
+@media (max-width:320px){
+    body{
+        width: 320px;
+    }
+}
